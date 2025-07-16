@@ -6,7 +6,7 @@ import { hotels } from "@/data/data-hotels";
 
 export const useMapSelection = () => {
   const [selectedCoords, setSelectedCoords] = useState<[number, number] | null>(null);
-  const [nearbyHotels, setNearbyHotels] = useState<Hotel[]>([]);
+  const [nearbyHotels, setNearbyHotels] = useState<Array<Hotel>>([]);
 
   const handleMapClick = (coords: [number, number]) => {
     setSelectedCoords(coords);
